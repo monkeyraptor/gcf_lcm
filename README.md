@@ -16,7 +16,7 @@ JavaScript function to get GCF (greatest common factor) and LCM (least common mu
 ## Output 
 > For **valid** input, the output will be an `object`.
 
-> The outout `object` consists of:
+> The `object` consists of:
 ```
 {
     duration: "process in milliseconds",
