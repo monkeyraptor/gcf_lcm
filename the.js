@@ -67,11 +67,9 @@ function glc(a) {
                         buffer[i] = v / divisor; // update buffer array
                     }
                     can_be_divided += 1;
+                    output = true;
                 }
             });
-            if (can_be_divided > 0) {
-                output = true;
-            }
             return [output, can_be_divided];
         };
 
@@ -81,11 +79,10 @@ function glc(a) {
                     divisor += 1; // increment divisor
                 } while (!is_prime(divisor) && divisor <= max);
             }
-            return divisor;
         };
 
         var gen_check_divisor = function () {
-            divisor = gen_divisor(); // generate a prime number as current divisor
+            gen_divisor(); // generate a prime number as current divisor
             chk_div = check_divisor(true); // true → check current divisor AND update buffer array
             if (chk_div[0] === true) { // true as chk_div[0] → at least one element can be divided
                 if (chk_div[1] > 0) {
