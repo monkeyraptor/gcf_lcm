@@ -26,7 +26,7 @@ def glc(a):
         not_positive_int = False
         # -----------------------
         def invalid_input(a):
-            return (a < 0 or a % 1 != 0 or a > 1e6)
+            return (a <= 0 or a % 1 != 0 or a > 1e6)
         # -----------------------
         if isinstance(b, list):
             if len(b) > 1:
@@ -102,13 +102,14 @@ def glc(a):
             }
         }
     # -----------------------
-    gl_result = "Error: invalid input"
+    gl_result = "Error: invalid input, must be list of positive integers..."
     if (test_input(a)):
         gl_result = gl_calc(a)
-        if isinstance(gl_result, dict):
-            end = datetime.now()
-            tt = end - start
-            tt = int(tt.seconds) + int(tt.microseconds / 1000)
-            gl_result["duration"] = str(tt) + " ms"
+    # -----------------------
+    if isinstance(gl_result, dict):
+        end = datetime.now()
+        tt = end - start
+        tt = int(tt.seconds) + int(tt.microseconds / 1000)
+        gl_result["duration"] = str(tt) + " ms"
     # -----------------------
     return gl_result
