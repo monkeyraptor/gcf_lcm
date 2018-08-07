@@ -4,7 +4,7 @@ JavaScript function to get GCF (greatest common factor) and LCM (least common mu
 ## Usage
 > `glc([list_of_positive_integers])`
 
-> Example: `gfm([8, 16, 18])`
+> Example: `glc([8, 16, 18])`
 
 ## Input
 > This function receives only an array of **positive integers** from `2` to `1,000,000` (1 million).
