@@ -56,9 +56,9 @@ Error: invalid input → must be array of positive integers → max each 1,000,0
 ```
 
 ## BASED ON CONTINUOUS DIVISION
-> More info on <a href="http://monkeyraptor.johanpaul.net/2018/08/math-finding-gcf-and-lcm-using.html" target="_blank">Monkey Raptor</a>
+> More info on <a href="http://monkeyraptor.johanpaul.net/2018/08/math-finding-gcf-and-lcm-using.html">Monkey Raptor</a>
 
 ## Python
-> Equivalency is <a href="https://github.com/monkeyraptor/gcf_lcm/blob/master/the.py" target="_blank" title="New tab">the.py</a>
+> Equivalency is <a href="https://github.com/monkeyraptor/gcf_lcm/blob/master/the.py">the.py</a>
 
 > It is with similar input (limitation) and output form (type).
