@@ -47,7 +47,7 @@ JavaScript function to get GCF (greatest common factor) and LCM (least common mu
 }
 ```
 ### INVALID INPUT
-> `gfm(4)` → input is `4` → **invalid** input
+> `glc(4)` → input is `4` → **invalid** input
 
 > Output (`string`):
 
