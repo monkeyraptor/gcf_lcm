@@ -7,7 +7,7 @@ function glc(a) {
         var i = 0;
         var not_positive_int = false;
         var invalid_input = function (a) {
-            return (a < 0 || a % 1 !== 0 || a > 1e6);
+            return (a <= 0 || a % 1 !== 0 || a > 1e6);
         };
         if (b !== undefined) {
             if (b.constructor === Array) {
