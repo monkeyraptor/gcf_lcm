@@ -87,9 +87,8 @@ def glc(a):
         # -----------------------
         def mul(a):
             mult = 1
-            for v in a:
-                if isinstance(v, int):
-                    mult *= v
+            for v in a:                
+                mult *= v
             return mult
         # -----------------------
         return {
