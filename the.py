@@ -80,18 +80,15 @@ def glc(a):
                     gcf.append(divisor)
             if division_complete(): # Outer loop limit
                 break
-            # -----------------------
+        # -----------------------
         def add_one(a):
-            if len(a) == 0:
-                a.append(1)
-            else:
-                a.insert(0, 1)
+            a.append(1) if len(a) == 0 else a.insert(0, 1)
             return a
         # -----------------------
         def mul(a):
             mult = 1
             for v in a:
-                if v is not None:
+                if isinstance(v, int):
                     mult *= v
             return mult
         # -----------------------
@@ -104,7 +101,7 @@ def glc(a):
                 "lcm": mul(lcm)
             }
         }
-        # -----------------------
+    # -----------------------
     gl_result = "Error: invalid input"
     if (test_input(a)):
         gl_result = gl_calc(a)
@@ -113,5 +110,5 @@ def glc(a):
             tt = end - start
             tt = int(tt.seconds) + int(tt.microseconds / 1000)
             gl_result["duration"] = str(tt) + " ms"
-            # -----------------------
+    # -----------------------
     return gl_result
